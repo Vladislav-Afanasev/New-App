@@ -50,21 +50,78 @@ textarea,
 select {
   font: inherit;
 }
-
+//---------------------------------------------------//
+$main-font: 'Roboto', 'sant-serif';
+$main-color: #00aacc;
+//---------------------------------------------------//
 .wrapper {
-    
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
-.header {
-}
+//---------------------------------------------------//
+.header {background-color: rgb(6, 210, 210);}
 .header__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+  min-height: 115px;
+  align-items: center;
 }
-.header__logo {
+.header__logo {}
+.header__link-logo {
+  text-decoration: none;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 7px;
+  color: azure;
 }
 .header__link {
+  text-decoration: none;
+  font-family: $main-font;
+  font-size: large;
+  color: azure;
 }
 .header__nav {
+  display: flex;
+}
+.header__theme {
+  margin-right: 25px;
+  border-radius: 20px;
+  background-color: rgb(14, 194, 194);
+  img {
+    cursor: pointer;
+  }
 }
 .header__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
 }
 .header__item {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+//---------------------------------------------------//
+@media (max-width: 1400px) {
+  /* Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
+}
+
+@media (max-width: 990px) {
+  /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
+}
+
+@media (max-width: 770px) {
+  /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
 }
