@@ -61,7 +61,7 @@ $main-color: #00aacc;
   min-height: 100%;
 }
 //---------------------------------------------------//
-.header {background-color: rgb(6, 210, 210);}
+.header {background-color: rgb(0, 166, 199);}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -285,11 +285,137 @@ $main-color: #00aacc;
   margin: 5px 0px;
 }
 //---------------------------------------------------//
-
-
-
-
-
+.reviews {}
+.reviews__slider {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+  background-color: rgb(53, 213, 245);
+  border-radius: 25px;
+}
+.reviews__wrapper {}
+.reviews__items {
+  display: flex;
+  gap: 10px;
+}
+.reviews__item {}
+.reviews__card {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 5px;
+  border: 1px solid rgb(0, 54, 130);
+  margin: 40px 0px;
+}
+.reviews__person {
+  display: flex;
+}
+.reviews__name {
+  font-family: $main-font;
+  font-weight: 500;
+  padding: 5px 5px;
+}
+.reviews__icon {}
+.reviews__date {
+  font-family: $main-font;
+  font-weight: 200;
+  color: rgb(54, 54, 54);
+  padding: 5px 5px;
+}
+.reviews__text {
+  font-family: $main-font;
+  font-weight: 200;
+}
+.reviews__control {
+}
+//---------------------------------------------------//
+.brands {
+}
+.brands__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+  background-color: rgb(53, 213, 245);
+  border-radius: 25px;
+}
+.brands__title {
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  font-family: $main-font;
+  font-weight: 200;
+  font-size: 30px;
+  padding: 5px 5px;
+  margin: 45px 0px;
+}
+.brands__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.brands__item {
+  padding: 30px 5px;
+  &:hover {
+    background-color: #0098b6;
+    border-radius: 45px;
+    transition: all, linear, 0.3s;
+  }
+}
+//---------------------------------------------------//
+.footer {background-color: rgb(53, 213, 245);}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+.footer__title {
+  margin: 25px 0px;
+  font-family: $main-font;
+  font-weight: 100;
+  font-size: 14px;
+  color: white;
+}
+.footer__about {
+  display: flex;
+  justify-content: space-between;
+  .footer__item {
+    .footer__link {
+      text-decoration: none;
+      font-family: $main-font;
+      font-weight: 200;
+      color: white;
+      transition: all, linear, 0.3s;
+      &:hover {
+        color: rgb(0, 16, 138);
+      }
+    }
+  }
+}
+.footer__text {
+  margin: 25px 0px;
+  font-family: $main-font;
+  font-weight: 100;
+  font-size: 14px;
+  color: white;
+}
+.footer__img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 25px 0px;
+}
 //---------------------------------------------------//
 @media (max-width: 1400px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
