@@ -140,36 +140,58 @@ $main-color: #00aacc;
     padding-left: 10px;
   }
 }
-.slider {
+//---------------------------------------------------//
+.choose {
 }
-.slider__wrapper {
-}
-.slider__items {
+.choose__container {
+  background-color: rgb(53, 213, 245);
+  border-radius: 25px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
 }
-.slider__item {
+.choose__title {
+  font-family: $main-font;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 0px;
+  text-align: center;
+  margin: 30px 0px;
 }
-.slider__card {
+.choose__slider {
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+.choose__items {
+  width: 2800px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 0px;
+}
+.choose__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 200px;
+  max-width: 400px;
   height: 200px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
 }
 .slider__title {
-  height: 100px;
-  overflow: hidden;
   font-family: $main-font;
   font-size: 15px;
   padding: 10px 20px 10px 10px;
 }
-.slider__stock {
+.slider__stock-1, .slider__stock-2 {
   font-family: $main-font;
   font-size: 13px;
-  padding: 0px 0px 15px 10px;
+  padding: 0px 0px 7px 10px;
 }
 .slider__btn {
   padding: 0px 0px 10px 10px;
@@ -183,7 +205,20 @@ $main-color: #00aacc;
     padding: 3px 3px 3px 3px;
   }
 }
-.slider__control {
+.choose__btns {margin: 15px 0px;}
+.choose__control-prev, .choose__control-next {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(2, 188, 225);
+  font-family: $main-font;
+  font-weight: 200;
+  border: 0px;
+  color: rgb(255, 255, 255);
+  transition: all, linear, 0.3s;
+  &:hover {
+    background-color: #0098b6;
+  }
 }
 //---------------------------------------------------//
 .about__container {
@@ -251,7 +286,7 @@ $main-color: #00aacc;
   color: rgb(149, 149, 149);
 }
 //---------------------------------------------------//
-.about__benefits {}
+.about__benefits {margin: 0px 0px 25px 0px;}
 .about__benefits-wrapper {
   display: flex;
   gap: 15px;
@@ -265,8 +300,7 @@ $main-color: #00aacc;
   font-weight: 400;
   text-align: center;
 }
-.about__benefits-row-1 {
-}
+.about__benefits-row-1 {}
 .about__benefits-text {
   padding: 5px 5px;
   background-color: white;
@@ -286,50 +320,84 @@ $main-color: #00aacc;
 }
 //---------------------------------------------------//
 .reviews {}
-.reviews__slider {
+.reviews__container {
   display: flex;
+  flex-direction: column;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0px 15px 0px 15px;
   background-color: rgb(53, 213, 245);
   border-radius: 25px;
 }
-.reviews__wrapper {}
+.reviews__title {
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(48, 48, 48);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 0px;
+  margin: 25px 0px;
+}
+.reviews__slider {
+  max-width: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+}
 .reviews__items {
   display: flex;
   gap: 10px;
+  width: 3300px;
+  position: relative;
+  left: 0px;
+  transition: all, linear, 0.5s;
 }
-.reviews__item {}
-.reviews__card {
-  width: 500px;
+.reviews__item {
+  width: 550px;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
-  padding: 5px 5px;
-  border: 1px solid rgb(0, 54, 130);
-  margin: 40px 0px;
+  padding: 7px 7px;
 }
 .reviews__person {
   display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 15px 0px;
 }
 .reviews__name {
   font-family: $main-font;
   font-weight: 500;
-  padding: 5px 5px;
 }
-.reviews__icon {}
 .reviews__date {
   font-family: $main-font;
   font-weight: 200;
-  color: rgb(54, 54, 54);
-  padding: 5px 5px;
+  color: rgb(41, 41, 41);
 }
 .reviews__text {
   font-family: $main-font;
   font-weight: 200;
 }
-.reviews__control {
+.reviews__btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0px;
+}
+.reviews__control-prev, .reviews__control-next {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(2, 188, 225);
+  font-family: $main-font;
+  font-weight: 200;
+  border: 0px;
+  color: rgb(255, 255, 255);
+  transition: all, linear, 0.3s;
+  &:hover {
+    background-color: #0098b6;
+  }
 }
 //---------------------------------------------------//
 .brands {
