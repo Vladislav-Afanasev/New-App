@@ -119,7 +119,7 @@ $main-color: #00aacc;
 }
 .search__title {
   text-align: center;
-  padding: 90px 0px 75px 0px;
+  margin: 150px 0px 120px 0px;
   span {
     color: white;
     font-size: 35px;
@@ -141,8 +141,7 @@ $main-color: #00aacc;
   }
 }
 //---------------------------------------------------//
-.choose {
-}
+.choose {}
 .choose__container {
   background-color: rgb(53, 213, 245);
   border-radius: 25px;
@@ -154,23 +153,26 @@ $main-color: #00aacc;
 }
 .choose__title {
   font-family: $main-font;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 30px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
-  padding: 5px 0px;
+  padding: 10px 0px;
   text-align: center;
-  margin: 30px 0px;
+  margin: 70px 0px;
 }
 .choose__slider {
   max-width: 400px;
-  height: 200px;
+  height: 290px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .choose__items {
   width: 2800px;
   display: flex;
   gap: 15px;
+  transition: all, ease, 0.3s;
   position: relative;
   left: 0px;
 }
@@ -182,10 +184,12 @@ $main-color: #00aacc;
   height: 200px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
+  border: 5px solid rgba(0, 174, 209, 0.979);
 }
 .slider__title {
   font-family: $main-font;
   font-size: 15px;
+  font-weight: 500;
   padding: 10px 20px 10px 10px;
 }
 .slider__stock-1, .slider__stock-2 {
@@ -205,7 +209,12 @@ $main-color: #00aacc;
     padding: 3px 3px 3px 3px;
   }
 }
-.choose__btns {margin: 15px 0px;}
+.choose__btns {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 .choose__control-prev, .choose__control-next {
   width: 100px;
   height: 40px;
@@ -243,7 +252,8 @@ $main-color: #00aacc;
   border-radius: 25px;
   text-align: center;
   font-family: $main-font;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 30px;
 }
 .about__subtitle {
   background-color: white;
@@ -293,11 +303,12 @@ $main-color: #00aacc;
 }
 .about__benefits-title {
   margin: 25px 0px;
-  padding: 7px 7px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 15px;
   font-family: $main-font;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 30px;
   text-align: center;
 }
 .about__benefits-row-1 {}
@@ -337,7 +348,7 @@ $main-color: #00aacc;
   color: rgb(48, 48, 48);
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
-  padding: 5px 0px;
+  padding: 10px 0px;
   margin: 25px 0px;
 }
 .reviews__slider {
@@ -360,6 +371,7 @@ $main-color: #00aacc;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
   padding: 7px 7px;
+  border: 5px solid rgba(0, 174, 209, 0.979);
 }
 .reviews__person {
   display: flex;

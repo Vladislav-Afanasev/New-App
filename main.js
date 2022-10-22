@@ -16,12 +16,12 @@ let offSetTwo = 0;
 const chooseItems = document.querySelector('.choose__items');
 
 document.querySelector('.choose__control-next').addEventListener('click', function() {
-    offSet += 400;
-    offSet > 2800 ? offSetTwo = 0 : undefined;
+    offSetTwo += 400;
+    offSetTwo > 2400 ? offSetTwo = 0 : undefined;
     chooseItems.style.left = -offSetTwo + 'px';
 });
 document.querySelector('.choose__control-prev').addEventListener('click', function() {
-    offSetTwo -= 550;
-    offSetTwo < 0 ? offSetTwo = 2800 : undefined;
+    offSetTwo -= 400;
+    offSetTwo < 0 ? offSetTwo = 2400 : undefined;
     chooseItems.style.left = -offSetTwo + 'px';
 });
