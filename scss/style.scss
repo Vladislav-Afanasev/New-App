@@ -61,7 +61,14 @@ $main-color: #00aacc;
   min-height: 100%;
 }
 //---------------------------------------------------//
-.header {background-color: rgb(0, 166, 199);}
+.header {
+  background-color: rgb(0, 166, 199);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -92,7 +99,9 @@ $main-color: #00aacc;
 .header__theme {
   margin-right: 25px;
   border-radius: 20px;
-  background-color: rgb(14, 194, 194);
+  padding: 10px 10px;
+  background-color: rgb(66, 201, 246);
+  box-shadow: 0px 0px 5px white;
   img {
     cursor: pointer;
   }
@@ -106,8 +115,37 @@ $main-color: #00aacc;
   display: flex;
   align-items: center;
 }
+.header__btn {
+  font-family: $main-font;
+  font-weight: 200;
+  font-size: 20px;
+  background-color: rgb(0, 166, 199);
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 7px 7px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px white;
+  transition: all,ease,0.5s;
+  .header__link-btn {
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+  }
+  &:hover {
+    background-color: #00697b;
+  }
+}
+.burger__field {
+  display: none;
+}
+.popup {
+  display: none;
+}
 //---------------------------------------------------//
-.search {}
+.search {
+  margin-top: 115px;
+}
 .search__container {
   background-color: rgb(53, 213, 245);
   border-radius: 25px;
@@ -119,7 +157,7 @@ $main-color: #00aacc;
 }
 .search__title {
   text-align: center;
-  margin: 150px 0px 120px 0px;
+  margin: 150px 0px 50px 0px;
   span {
     color: white;
     font-size: 35px;
@@ -130,7 +168,7 @@ $main-color: #00aacc;
 .search__form {
   display: inline-flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 70px;
   .search__input {
     width: 800px;
     height: 50px;
@@ -138,6 +176,7 @@ $main-color: #00aacc;
     border-radius: 15px;
     font-family: $main-font;
     padding-left: 10px;
+    outline: none;
   }
 }
 //---------------------------------------------------//
@@ -497,6 +536,116 @@ $main-color: #00aacc;
   margin: 0px 0px 25px 0px;
 }
 //---------------------------------------------------//
+.reg__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  max-width: 750px;
+  height: 350px;
+  background-color: rgb(0, 170, 204);
+  border-radius: 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all,ease,0.5s;
+}
+.reg__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.button {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 25px;
+  padding: 7px 5px;
+  transition: all,ease,0.3s;
+  &:hover {
+    background-color: rgb(0, 204, 245);
+  }
+}
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+.reg__title-1 {
+  font-family: $main-font;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+.reg__form-f {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  input {
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 25px;
+    font-family: $main-font;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 5px 10px;
+    outline: none;
+  }
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  height: 350px;
+  background-color: rgb(0, 170, 204);
+  border-radius: 25px;
+  position: relative;
+}
+.reg__login {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+}
+.reg__title-2 {
+  font-family: $main-font;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200px;
+  border-radius: 25px;
+  padding: 10px 0px;
+  background-color: rgb(255, 255, 255);
+}
+//---------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1400px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
 }
@@ -505,6 +654,7 @@ $main-color: #00aacc;
   /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
+
 }

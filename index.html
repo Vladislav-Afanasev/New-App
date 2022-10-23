@@ -16,23 +16,30 @@
                 <div class="header__logo">
                     <a href="#" class="header__link-logo">ProbirkaBY</a>
                 </div>
-                <div class="header__nav">
+                <nav class="header__nav">
                     <div class="header__theme">
                         <img src="./img/light_mode_FILL0_wght300_GRAD0_opsz40.svg" style="display: none;" alt="sun-img">
                         <img src="./img/dark_mode_FILL0_wght300_GRAD0_opsz40.svg" alt="moon-img">
                     </div>
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Анализы и цены</a>
-                        </li>
-                        <li class="header__item">
                             <a href="#" class="header__link">Расшифровка</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Личный кабинет</a>
+                            <a href="#" class="header__link">Каталог</a>
+                        </li>
+                        <li class="header__item">
+                            <button class="header__btn">
+                                <a href="#" class="header__link-btn">Вход/Регистрация</a>
+                            </button>
                         </li>
                     </ul>
-                </div>
+                    <div class="burger__field" id="burger">
+                        <span class="br1"></span>
+                        <span class="br2"></span>
+                        <span class="br3"></span>
+                    </div>
+                </nav>
             </div>
         </header>
         <main class="main">
@@ -326,6 +333,31 @@
                 </div>
             </div>
         </footer>
+        <div class="reg__container" style="display:none;">
+            <div class="reg__btns">
+                <button class="button" id="signup">Регистрация</button>
+                <button class="button" id="login">Вход</button>
+            </div>
+            <div class="reg__form">
+                <div class="reg__title-1">Добро пожаловать! Зарегистрируйтесь</div>
+                <form autocomplete="off" class="reg__form-f">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button class="button">Регистрация</button>
+                </form>
+            </div>
+        </div>
+        <div class="login__container" style="display:none;">
+            <div class="reg__login">
+                <div class="reg__title-2">Здравствуйте!</div>
+                <form autocomplete="off" class="reg__form-f">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="button">Вход</button>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>

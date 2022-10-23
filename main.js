@@ -25,3 +25,8 @@ document.querySelector('.choose__control-prev').addEventListener('click', functi
     offSetTwo < 0 ? offSetTwo = 2400 : undefined;
     chooseItems.style.left = -offSetTwo + 'px';
 });
+const burger = document.querySelector('.burger__field');
+const menu = document.querySelector('.header__list');
+burger.addEventListener('click', function() {
+    menu.classList.toggle('active');
+});
