@@ -136,7 +136,7 @@ $main-color: #00aacc;
     background-color: #00697b;
   }
 }
-.burger__field {
+.header__burger {
   display: none;
 }
 .popup {
@@ -477,9 +477,10 @@ $main-color: #00aacc;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 .brands__item {
   padding: 30px 5px;
@@ -508,7 +509,9 @@ $main-color: #00aacc;
 }
 .footer__about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
   .footer__item {
     .footer__link {
       text-decoration: none;
@@ -536,6 +539,16 @@ $main-color: #00aacc;
   margin: 0px 0px 25px 0px;
 }
 //---------------------------------------------------//
+.reg__wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 104, 123, 0.501);
+}
 .reg__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -607,7 +620,6 @@ $main-color: #00aacc;
   height: 350px;
   background-color: rgb(0, 170, 204);
   border-radius: 25px;
-  position: relative;
 }
 .reg__login {
   padding: 0px 10px;
@@ -652,9 +664,84 @@ $main-color: #00aacc;
 
 @media (max-width: 990px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
+  
 }
 
 @media (max-width: 800px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
-
+  .header__list {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    cursor: pointer;
+    .br1, .br2, .br3 {
+      display: block;
+      width: 35px;
+      height: 7px;
+      margin: 6px auto;
+      background-color: #00697b;
+      transition: 0.3s;
+    }
+  }
+  .popup {
+    position: fixed;
+    left: 100%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 152, 182, 0.501);
+    display: flex;
+    transition: 0.3s;
+  }
+  .open {
+    left: 0;
+    right: 0;
+    justify-content: center;
+    .header__list {
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 50px 50px;
+      .header__item {
+        justify-content: center;
+        padding-bottom: 25px;
+        .header__link {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .active {
+    .br2 {
+      opacity: 0;
+    }
+    .br1 {
+      transform: translateY(13px) rotate(45deg);
+    }
+    .br3 {
+      transform: translateY(-13px) rotate(-45deg);
+    }
+  }
+  .noscroll {
+    overflow: hidden;
+  }
+  .about__wrapper {
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__row-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__benefits-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 443px) {
+  .about__row-1 {
+    gap: 15px;
+  }
 }

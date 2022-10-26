@@ -25,8 +25,23 @@ document.querySelector('.choose__control-prev').addEventListener('click', functi
     offSetTwo < 0 ? offSetTwo = 2400 : undefined;
     chooseItems.style.left = -offSetTwo + 'px';
 });
-const burger = document.querySelector('.burger__field');
-const menu = document.querySelector('.header__list');
-burger.addEventListener('click', function() {
-    menu.classList.toggle('active');
+
+const burger = document.querySelector('#burger');
+const popup = document.querySelector('#popup');
+const body = document.body;
+
+burger.addEventListener('click', function brg(e) {
+    e.preventDefault();
+    popup.classList.toggle('open');
+    burger.classList.toggle('active');
+    body.classList.toggle('noscroll');
+
+    insideMenu();
 });
+
+const menu = document.querySelector('#menu').cloneNode(1);
+
+function insideMenu() {
+    popup.appendChild(menu);
+};
+
