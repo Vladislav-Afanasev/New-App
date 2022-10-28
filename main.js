@@ -35,7 +35,6 @@ burger.addEventListener('click', function brg(e) {
     popup.classList.toggle('open');
     burger.classList.toggle('active');
     body.classList.toggle('noscroll');
-
     insideMenu();
 });
 
@@ -45,3 +44,16 @@ function insideMenu() {
     popup.appendChild(menu);
 };
 
+const popupOpen = document.getElementById('openPopup');
+const popupClose = document.getElementById('closePopup');
+const popupPage = document.getElementById('mainPopup');
+
+popupOpen.addEventListener('click', function(e) {
+    e.preventDefault();
+    popupPage.classList.add('active-popup');
+    body.classList.toggle('noscroll');
+});
+
+popupClose.addEventListener('click', function() {
+    popupPage.classList.remove('active-popup');
+});

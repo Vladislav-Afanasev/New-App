@@ -29,7 +29,7 @@
                             <a href="#" class="header__link">Каталог</a>
                         </li>
                         <li class="header__item">
-                            <button class="header__btn">
+                            <button class="header__btn" id="openPopup">
                                 <a href="#" class="header__link-btn">Вход/Регистрация</a>
                             </button>
                         </li>
@@ -336,32 +336,27 @@
                 </div>
             </div>
         </footer>
+        <div class="reg__popup" id="mainPopup">
+            <div class="reg__body">
+                <div class="reg__container">
+                    <div class="reg__btns">
+                        <button class="button" id="signup">Регистрация</button>
+                        <button class="button" id="login">Вход</button>
+                    </div>
+                    <div class="reg__form">
+                        <span class="reg__close" id="closePopup">&#128473;</span>
+                        <div class="reg__title-1">Добро пожаловать! Зарегистрируйтесь</div>
+                        <form autocomplete="off" class="reg__form-f">
+                            <input type="text" placeholder="Имя" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Пароль" required>
+                            <button class="button">Регистрация</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-        <div class="reg__container" style="display:none;">
-            <div class="reg__btns">
-                <button class="button" id="signup">Регистрация</button>
-                <button class="button" id="login">Вход</button>
-            </div>
-            <div class="reg__form">
-                <div class="reg__title-1">Добро пожаловать! Зарегистрируйтесь</div>
-                <form autocomplete="off" class="reg__form-f">
-                    <input type="text" placeholder="Имя" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Пароль" required>
-                    <button class="button">Регистрация</button>
-                </form>
-            </div>
-        </div>
-        <div class="login__container" style="display:none;">
-            <div class="reg__login">
-                <div class="reg__title-2">Здравствуйте!</div>
-                <form autocomplete="off" class="reg__form-f">
-                    <input type="text" placeholder="Имя" required>
-                    <input type="password" placeholder="Пароль" required>
-                    <button type="submit" class="button">Вход</button>
-                </form>
-            </div>
-        </div>
     <script src="./main.js"></script>
 </body>
 </html>

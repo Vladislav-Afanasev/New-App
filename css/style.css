@@ -725,20 +725,39 @@ select {
   margin: 0px 0px 25px 0px;
 }
 
-.reg__wrapper {
+.reg__popup {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  background-color: rgba(0, 152, 182, 0.5);
+}
+
+.active-popup {
+  display: block;
+}
+
+.reg__body {
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 104, 123, 0.501);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reg__container {
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-columns: 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 15px;
@@ -748,13 +767,6 @@ select {
   height: 350px;
   background-color: rgb(0, 170, 204);
   border-radius: 25px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all, ease, 0.5s;
-  transition: all, ease, 0.5s;
 }
 
 .reg__btns {
@@ -799,6 +811,14 @@ select {
   padding: 0px 10px;
 }
 
+.reg__close {
+  width: 25px;
+  padding: 5px 5px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .reg__title-1 {
   font-family: "Roboto", "sant-serif";
   font-size: 20px;
@@ -827,48 +847,6 @@ select {
   font-size: 15px;
   padding: 5px 10px;
   outline: none;
-}
-
-.login__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 400px;
-  height: 350px;
-  background-color: rgb(0, 170, 204);
-  border-radius: 25px;
-}
-
-.reg__login {
-  padding: 0px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 45px;
-}
-
-.reg__title-2 {
-  font-family: "Roboto", "sant-serif";
-  font-size: 20px;
-  text-align: center;
-  font-weight: 200px;
-  border-radius: 25px;
-  padding: 10px 0px;
-  background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 1400px) {
