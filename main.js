@@ -51,7 +51,6 @@ const popupPage = document.getElementById('mainPopup');
 popupOpen.addEventListener('click', function(e) {
     e.preventDefault();
     popupPage.classList.add('active-popup');
-    body.classList.toggle('noscroll');
 });
 
 popupClose.addEventListener('click', function() {

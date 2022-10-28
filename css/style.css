@@ -198,14 +198,18 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1320px;
+  min-height: 700px;
   margin: 0 auto;
   padding: 0px 15px 0px 15px;
 }
 
 .search__title {
   text-align: center;
-  margin: 150px 0px 50px 0px;
+  margin: auto 0px;
 }
 .search__title span {
   color: white;
@@ -781,6 +785,7 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
+  padding: 0px 10px;
 }
 
 .button {
