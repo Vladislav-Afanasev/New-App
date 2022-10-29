@@ -274,15 +274,107 @@ $main-color: #00aacc;
 .decoding {
 }
 .decoding__container {
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+  background-color: rgb(53, 213, 245);
+  border-radius: 25px;
+}
+.decoding__discription {
+  font-family: $main-font;
+  font-weight: 200;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: 45px 0px;
+}
+.decoding__main-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0px;
 }
 .decoding__title-counter {
+  font-family: $main-font;
+  font-weight: 200;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px 5px;
 }
 .decoding__counter {
+  font-family: $main-font;
+  font-weight: 200;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px 10px;
 }
 .decoding__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.decoding__form-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  label {
+    font-family: $main-font;
+    font-weight: 200;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 10px;
+  }
+  input {
+    min-width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+  }
+  span {
+    font-family: $main-font;
+    font-weight: 200;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 10px;
+  }
+}
+.decoding__form-agree {
+  display: flex;
+  gap: 10px;
+  input {
+    width: 45px;
+    height: 30px;
+  }
+  span {
+    font-family: $main-font;
+    font-weight: 200;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px 10px;
+  }
+  padding: 15px 0px;
 }
 .decoding__submit {
+  font-family: $main-font;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 188, 225);
+  border-radius: 25px;
+  padding: 10px 10px;
+  border: 0px;
+  max-width: 200px;
+  align-self: center;
+  margin-bottom: 25px;
+  transition: all,ease,0.3s;
+  &:hover {
+    background-color: #0098b6;
+  }
 }
 //---------------------------------------------------//
 .about__container {
