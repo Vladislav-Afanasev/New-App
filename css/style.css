@@ -265,8 +265,8 @@ select {
 }
 
 .choose__slider {
-  max-width: 400px;
-  height: 290px;
+  width: 400px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -294,7 +294,7 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 400px;
+  width: 400px;
   height: 200px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
