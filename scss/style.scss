@@ -72,11 +72,11 @@ $main-color: #00aacc;
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0px 15px 0px 15px;
   min-height: 115px;
-  align-items: center;
 }
 .header__logo {}
 .header__link-logo {
@@ -98,7 +98,7 @@ $main-color: #00aacc;
 }
 .header__theme {
   margin-right: 25px;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px 10px;
   background-color: rgb(66, 201, 246);
   box-shadow: 0px 0px 5px white;
@@ -387,13 +387,14 @@ $main-color: #00aacc;
   border-radius: 25px;
 }
 .about__wrapper {
-  margin: 70px 0px;
+  margin: 30px 0px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 100px;
 }
 .about__title {
-  margin: 25px 0px 25px 0px;
+  margin: auto 0;
   padding: 10px 0px 10px 0px;
   background-color: white;
   border-radius: 25px;
@@ -733,48 +734,39 @@ $main-color: #00aacc;
   }
 }
 //---------------------------------------------------//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1400px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей, но больше 990 пикселей. Эти стили будут использованы для планшетов и ноутбуков с низким разрешением */
 }
 
 @media (max-width: 990px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
-  
+  .about__wrapper {
+    gap: 35px;
+  }
 }
-
 @media (max-width: 800px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
   .header__list {
     display: none;
   }
+  .header__link-logo {
+    font-size: 25px;
+  }
+  .header__theme {
+    padding: 3px 3px;
+    margin-right: 10px;
+  }
   .header__burger {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     .br1, .br2, .br3 {
       display: block;
       width: 35px;
       height: 7px;
-      margin: 6px auto;
+      margin: 3px auto;
       background-color: #00697b;
       transition: 0.3s;
     }
@@ -835,8 +827,44 @@ $main-color: #00aacc;
     flex-wrap: wrap;
   }
 }
-@media (max-width: 443px) {
+@media (max-width: 445px) {
   .about__row-1 {
     gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .search__title {
+    span {
+      font-size: 30px;
+      font-weight: 500;
+      font-family: $main-font;
+    }
+  }
+  .choose__title {
+    font-size: 25px;
+  }
+  .decoding__discription {
+    font-size: 25px;
+  }
+  .decoding__form-agree {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__benefits-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 330px) {
+  .decoding__main-title {
+    justify-content: center;
+  }
+  .decoding__form {
+    .decoding__form-wrapper {
+      justify-content: center;
+      margin-bottom: 20px;
+      label {
+        text-align: center;
+      }
+    }
   }
 }

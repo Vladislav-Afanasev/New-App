@@ -90,13 +90,13 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0px 15px 0px 15px;
   min-height: 115px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__link-logo {
@@ -123,7 +123,7 @@ select {
 
 .header__theme {
   margin-right: 25px;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px 10px;
   background-color: rgb(66, 201, 246);
   -webkit-box-shadow: 0px 0px 5px white;
@@ -508,7 +508,7 @@ select {
 }
 
 .about__wrapper {
-  margin: 70px 0px;
+  margin: 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,11 +516,14 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 100px;
 }
 
 .about__title {
-  margin: 25px 0px 25px 0px;
+  margin: auto 0;
   padding: 10px 0px 10px 0px;
   background-color: white;
   border-radius: 25px;
@@ -997,6 +1000,9 @@ select {
 }
 @media (max-width: 990px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
+  .about__wrapper {
+    gap: 35px;
+  }
 }
 @media (max-width: 800px) {
   /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
@@ -1004,15 +1010,36 @@ select {
     display: none;
   }
 
+  .header__link-logo {
+    font-size: 25px;
+  }
+
+  .header__theme {
+    padding: 3px 3px;
+    margin-right: 10px;
+  }
+
   .header__burger {
-    display: block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   .header__burger .br1, .header__burger .br2, .header__burger .br3 {
     display: block;
     width: 35px;
     height: 7px;
-    margin: 6px auto;
+    margin: 3px auto;
     background-color: #00697b;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1094,8 +1121,54 @@ select {
         flex-wrap: wrap;
   }
 }
-@media (max-width: 443px) {
+@media (max-width: 445px) {
   .about__row-1 {
     gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .search__title span {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Roboto", "sant-serif";
+  }
+
+  .choose__title {
+    font-size: 25px;
+  }
+
+  .decoding__discription {
+    font-size: 25px;
+  }
+
+  .decoding__form-agree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about__benefits-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 330px) {
+  .decoding__main-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .decoding__form .decoding__form-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .decoding__form .decoding__form-wrapper label {
+    text-align: center;
   }
 }

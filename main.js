@@ -12,18 +12,18 @@ document.querySelector('.reviews__control-prev').addEventListener('click', funct
     reviewsItems.style.left = -offSet + 'px';
 });
 
-let offSetTwo = 0;
-const chooseItems = document.querySelector('.choose__items');
+ let offSetTwo = 0;
+ const chooseItems = document.querySelector('.choose__items');
 
-document.querySelector('.choose__control-next').addEventListener('click', function() {
-    offSetTwo += 400;
-    offSetTwo > 2400 ? offSetTwo = 0 : undefined;
-    chooseItems.style.left = -offSetTwo + 'px';
+ document.querySelector('.choose__control-next').addEventListener('click', function() {
+     offSetTwo += 400;
+     offSetTwo > 2400 ? offSetTwo = 0 : undefined;
+     chooseItems.style.left = -offSetTwo + 'px';
 });
-document.querySelector('.choose__control-prev').addEventListener('click', function() {
-    offSetTwo -= 400;
-    offSetTwo < 0 ? offSetTwo = 2400 : undefined;
-    chooseItems.style.left = -offSetTwo + 'px';
+ document.querySelector('.choose__control-prev').addEventListener('click', function() {
+     offSetTwo -= 400;
+     offSetTwo < 0 ? offSetTwo = 2400 : undefined;
+     chooseItems.style.left = -offSetTwo + 'px';
 });
 
 const burger = document.querySelector('#burger');
@@ -56,3 +56,17 @@ popupOpen.addEventListener('click', function(e) {
 popupClose.addEventListener('click', function() {
     popupPage.classList.remove('active-popup');
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const blockId = anchor.getAttribute('href');
+        document.querySelector('' + blockId).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+};
+
