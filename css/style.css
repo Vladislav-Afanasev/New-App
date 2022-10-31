@@ -1125,6 +1125,102 @@ select {
   .about__row-1 {
     gap: 15px;
   }
+
+  .choose__title {
+    margin: 25px 0px;
+  }
+
+  .choose__slider {
+    width: 287.14px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .choose__items {
+    width: 2009.98px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -webkit-transition: all, ease, 0.3s;
+    transition: all, ease, 0.3s;
+    position: relative;
+    left: 0px;
+  }
+
+  .choose__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 287.14px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 5px solid rgba(0, 174, 209, 0.979);
+  }
+
+  .slider__title {
+    font-family: "Roboto", "sant-serif";
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px 10px 10px;
+  }
+
+  .slider__stock-1, .slider__stock-2 {
+    font-family: "Roboto", "sant-serif";
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 0px 7px 10px;
+  }
+
+  .slider__btn {
+    padding: 0px 0px 10px 10px;
+  }
+  .slider__btn button {
+    background-color: #00aacc;
+    color: white;
+    font-family: "Roboto", "sant-serif";
+    font-size: 13px;
+    border: 0px;
+    border-radius: 7px;
+    padding: 3px 3px 3px 3px;
+  }
+
+  .choose__btns {
+    margin: 15px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+
+  .choose__control-prev, .choose__control-next {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(2, 188, 225);
+    font-family: "Roboto", "sant-serif";
+    font-weight: 200;
+    font-size: 13px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    -webkit-transition: all, linear, 0.3s;
+    transition: all, linear, 0.3s;
+  }
+  .choose__control-prev:hover, .choose__control-next:hover {
+    background-color: #0098b6;
+  }
 }
 @media (max-width: 400px) {
   .search__title span {

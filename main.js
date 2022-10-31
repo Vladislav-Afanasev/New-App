@@ -12,19 +12,56 @@ document.querySelector('.reviews__control-prev').addEventListener('click', funct
     reviewsItems.style.left = -offSet + 'px';
 });
 
- let offSetTwo = 0;
- const chooseItems = document.querySelector('.choose__items');
 
- document.querySelector('.choose__control-next').addEventListener('click', function() {
-     offSetTwo += 400;
-     offSetTwo > 2400 ? offSetTwo = 0 : undefined;
-     chooseItems.style.left = -offSetTwo + 'px';
-});
- document.querySelector('.choose__control-prev').addEventListener('click', function() {
-     offSetTwo -= 400;
-     offSetTwo < 0 ? offSetTwo = 2400 : undefined;
-     chooseItems.style.left = -offSetTwo + 'px';
-});
+
+let offSetTwo = 0;
+const chooseItems = document.querySelector('.choose__items');
+
+const mediaQuery = window.matchMedia('(min-width: 446px)')
+if (mediaQuery.matches) {
+    document.querySelector('.choose__control-next').addEventListener('click', function() {
+        offSetTwo += 400;
+        offSetTwo > 2400 ? offSetTwo = 0 : undefined;
+        chooseItems.style.left = -offSetTwo + 'px';
+    });
+    document.querySelector('.choose__control-prev').addEventListener('click', function() {
+        offSetTwo -= 400;
+        offSetTwo < 0 ? offSetTwo = 2400 : undefined;
+        chooseItems.style.left = -offSetTwo + 'px';
+    });
+}
+
+
+let offSetTwoMini = 0;
+const chooseItemsMini = document.querySelector('.choose__items');
+
+const mediaQuery2 = window.matchMedia('(max-width: 445px)')
+if (mediaQuery2.matches) {
+    document.querySelector('.choose__control-next').addEventListener('click', function() {
+        offSetTwoMini += 287.14;
+        offSetTwoMini > 2009.98 ? offSetTwoMini = 0 : undefined;
+        chooseItemsMini.style.left = -offSetTwoMini + 'px';
+    });
+     document.querySelector('.choose__control-prev').addEventListener('click', function() {
+        offSetTwoMini -= 287.14;
+        offSetTwoMini < 0 ? offSetTwoMini = 2009.98 : undefined;
+        chooseItemsMini.style.left = -offSetTwoMini + 'px';
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const burger = document.querySelector('#burger');
 const popup = document.querySelector('#popup');
