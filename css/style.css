@@ -900,21 +900,6 @@ select {
 }
 
 .reg__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 15px 1fr;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
-  max-width: 750px;
-  height: 350px;
-  background-color: rgb(0, 170, 204);
-  border-radius: 25px;
-}
-
-.reg__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,8 +910,15 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
-  padding: 0px 10px;
+  position: relative;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  max-width: 750px;
+  height: 350px;
+  background-color: rgb(0, 170, 204);
+  border-radius: 25px;
+  padding: 15px 15px;
 }
 
 .button {
@@ -944,25 +936,12 @@ select {
   background-color: rgb(0, 204, 245);
 }
 
-.reg__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0px 10px;
-}
-
 .reg__close {
-  width: 25px;
-  padding: 5px 5px;
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .reg__title-1 {
@@ -972,6 +951,8 @@ select {
   font-weight: 200px;
   border-radius: 25px;
   background-color: rgb(255, 255, 255);
+  margin: auto 0;
+  padding: 15px 15px;
 }
 
 .reg__form-f {
