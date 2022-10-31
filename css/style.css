@@ -902,9 +902,9 @@ select {
 .reg__container {
   display: -ms-grid;
   display: grid;
-  position: relative;
   -ms-grid-columns: 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr;
+  position: relative;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -1121,6 +1121,96 @@ select {
         flex-wrap: wrap;
   }
 }
+@media (max-width: 565px) {
+  .reviews__slider {
+    width: 295px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .reviews__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    width: 1770px;
+    position: relative;
+    left: 0px;
+    -webkit-transition: all, linear, 0.5s;
+    transition: all, linear, 0.5s;
+  }
+
+  .reviews__item {
+    width: 295px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 7px 7px;
+    border: 5px solid rgba(0, 174, 209, 0.979);
+  }
+
+  .reviews__person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .reviews__name {
+    font-family: "Roboto", "sant-serif";
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .reviews__date {
+    font-family: "Roboto", "sant-serif";
+    font-weight: 200;
+    font-size: 13px;
+    color: rgb(41, 41, 41);
+  }
+
+  .reviews__text {
+    font-family: "Roboto", "sant-serif";
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  .reviews__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    margin: 15px 0px;
+  }
+
+  .reviews__control-prev, .reviews__control-next {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(2, 188, 225);
+    font-family: "Roboto", "sant-serif";
+    font-weight: 200;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    -webkit-transition: all, linear, 0.3s;
+    transition: all, linear, 0.3s;
+  }
+  .reviews__control-prev:hover, .reviews__control-next:hover {
+    background-color: #0098b6;
+  }
+}
 @media (max-width: 445px) {
   .about__row-1 {
     gap: 15px;
@@ -1131,14 +1221,14 @@ select {
   }
 
   .choose__slider {
-    width: 287.14px;
+    width: 275px;
     height: 350px;
     margin: 0 auto;
     overflow: hidden;
   }
 
   .choose__items {
-    width: 2009.98px;
+    width: 1925px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1157,10 +1247,10 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 287.14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 275px;
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
