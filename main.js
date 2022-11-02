@@ -1,3 +1,25 @@
+const themeSwitcher = document.querySelectorAll('.change__theme');
+
+themeSwitcher.forEach(switcher => {
+    switcher.addEventListener('click', function() {
+        applyTheme(this.dataset.theme);
+        localStorage.setItem('theme', this.dataset.theme);
+    });
+});
+
+function applyTheme (themeName) {
+    let themeUrl = `/css/theme-${themeName}.css`;
+    document.querySelector('[title="theme"]').setAttribute('href', themeUrl);
+};
+
+let activeTheme = localStorage.getItem('theme');
+
+if(activeTheme === null) {
+    activeTheme('light');
+} else {
+    applyTheme(activeTheme);
+}
+
 let offSet = 0;
 const reviewsItems = document.querySelector('.reviews__items');
 

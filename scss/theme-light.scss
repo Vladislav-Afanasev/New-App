@@ -1,0 +1,312 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+.header {
+    background-color: rgb(0, 166, 199);
+}
+.header__logo {}
+.header__link-logo {
+    color: azure;
+}
+.header__link {
+    color: azure;
+}
+.header__theme {
+    background-color: rgb(66, 201, 246);
+    box-shadow: 0px 0px 5px white;
+}
+.header__btn {
+    background-color: rgb(0, 166, 199);
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    .header__link-btn {
+      color: rgb(255, 255, 255);
+    }
+    &:hover {
+      background-color: #00697b;
+    }
+  }
+.search__container {
+    background-color: rgb(53, 213, 245);
+}
+.search__title {
+    span {
+      color: white;
+    }
+}
+.choose__container {
+    background-color: rgb(53, 213, 245);
+}
+.choose__title {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+.choose__item {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(0, 174, 209, 0.979);
+}
+.slider__btn {
+    button {
+      background-color: #00aacc;
+      color: white;
+
+    }
+}
+.choose__control-prev, .choose__control-next {
+    background-color: rgb(2, 188, 225);
+    color: rgb(255, 255, 255);
+    &:hover {
+      background-color: #0098b6;
+    }
+}
+.decoding__container {
+    background-color: rgb(53, 213, 245);
+}
+  .decoding__discription {
+    background-color: rgb(255, 255, 255);
+}
+.decoding__title-counter {
+    background-color: rgb(255, 255, 255);
+}
+.decoding__counter {
+    background-color: rgb(255, 255, 255);
+}
+.decoding__form-wrapper {
+    label {
+      background-color: white;
+    }
+    span {
+      background-color: white;
+    }
+}
+.warning {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(139, 0, 0);
+    color: rgb(192, 0, 0);
+}
+.normal {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal1 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal1 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal2 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal2 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal3 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal3 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal4 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal4 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal5 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal5 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal6 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal6 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.normal7 {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 139, 0);
+}
+.notNormal7 {
+    background-color: white;
+    border: 3px solid rgb(255, 0, 0);
+}
+.decoding__form-agree {
+    span {
+      background-color: rgb(255, 255, 255);
+    }
+}
+.decoding__submit {
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 188, 225);
+    &:hover {
+      background-color: #0098b6;
+    }
+}
+.about__container {
+    background-color: rgb(53, 213, 245);
+}
+.about__title {
+    background-color: white;
+}
+.about__subtitle {
+    background-color: white;
+}
+.about__number {
+    background-color: white;
+
+}
+.about__number-subtitle {
+    background-color: white;
+    color: rgb(149, 149, 149);
+}
+.about__benefits-title {
+    background-color: white;
+}
+.about__benefits-text {
+    background-color: white;
+}
+  .about__benefits-list {
+    background-color: white;
+}
+.reviews__container {
+    background-color: rgb(53, 213, 245);
+}
+.reviews__title {
+    color: rgb(48, 48, 48);
+    background-color: rgb(255, 255, 255);
+}
+.reviews__item {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(0, 174, 209, 0.979);
+}
+.reviews__date {
+    color: rgb(41, 41, 41);
+}
+.reviews__control-prev, .reviews__control-next {
+    background-color: rgb(2, 188, 225);
+    color: rgb(255, 255, 255);
+    &:hover {
+      background-color: #0098b6;
+    }
+}
+.brands__container {
+    background-color: rgb(53, 213, 245);
+}
+.brands__title {
+    background-color: white;
+}
+.brands__list {
+    background-color: white;
+}
+.brands__item {
+    &:hover {
+      background-color: #0098b6;
+    }
+}
+.footer {background-color: rgb(53, 213, 245);}
+.footer__title {
+    color: white;
+}
+.footer__about {
+    .footer__item {
+      .footer__link {
+        color: white;
+        &:hover {
+          color: rgb(0, 16, 138);
+        }
+      }
+    }
+}
+.footer__text {
+    color: white;
+}
+.reg__popup {
+    background-color: rgba(0, 152, 182, 0.5);
+}
+.reg__container {
+    background-color: rgb(0, 170, 204);
+}
+.button {
+    background-color: rgb(255, 255, 255);
+    &:hover {
+      background-color: rgb(0, 204, 245);
+    }
+}
+.reg__title-1 {
+    background-color: rgb(255, 255, 255);
+}
+.reg__form-f {
+    input {
+      background-color: rgb(255, 255, 255);
+    }
+}
+@media (max-width: 800px) {
+    .header__burger {
+      .br1, .br2, .br3 {
+        background-color: #00697b;
+      }
+    }
+    .popup {
+      background-color: rgba(0, 152, 182, 0.501);
+    }
+}
+@media (max-width: 565px) {
+    .reviews__item {
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgba(0, 174, 209, 0.979);
+    }
+    .reviews__date {
+      color: rgb(41, 41, 41);
+    }
+    .reviews__control-prev, .reviews__control-next {
+      background-color: rgb(2, 188, 225);
+      color: rgb(255, 255, 255);
+      &:hover {
+        background-color: #0098b6;
+      }
+    }
+  }
+@media (max-width: 445px) {
+    .choose__item {
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgba(0, 174, 209, 0.979);
+    }
+    .slider__btn {
+      button {
+        background-color: #00aacc;
+        color: white;
+      }
+    }
+    .choose__control-prev, .choose__control-next {
+      background-color: rgb(2, 188, 225);
+      color: rgb(255, 255, 255);
+      &:hover {
+        background-color: #0098b6;
+      }
+    }
+}
+.change__theme[data-theme = "dark"] {
+  display: block;
+}
+.change__theme[data-theme = "light"] {
+  display: none;
+}
