@@ -137,15 +137,20 @@ const form = document.querySelector('.decoding__form'),
       norm6 = document.querySelector('.normal6'),
       notNormal6 = document.querySelector('.notNormal6'),
       norm7 = document.querySelector('.normal7'),
-      notNormal7 = document.querySelector('.notNormal7');
+      notNormal7 = document.querySelector('.notNormal7'),
+      warning = document.querySelector('.warning');
 
 formbtn.addEventListener('click', (e) => {
+    let emptyForm = Array.from(formInputs).filter(input => input.value === '');
     e.preventDefault();
     formInputs.forEach(function(input) {
         if (!input.value || input.value == '+' || input.value == '++' || input.value == '-' || input.value == '--' || input.value == ',' || input.value == '.') {
-            console.log('no')
+           warning.style.display = 'block';
         };
     });
+    if (emptyForm.length !== 0) {
+        return false;
+    };
     calculate();
 });
 
@@ -158,56 +163,58 @@ function calculate () {
     mchc = fornMchc,
     hct = formHct,
     plt = formPlt;
-    if (soe.value >= 1 & soe.value <= 10) {
+    if (soe.value >= 1 && soe.value <= 10) {
+        warning.style.display = 'none';
         norm.style.display = 'block';
         notNormal.style.display = 'none';
-    } else if (soe.value < 1 || soe.value > 10) {
+    } 
+    else if (soe.value < 1 || soe.value > 10) {
         norm.style.display = 'none';
         notNormal.style.display = 'block';
-    } 
-    if (gemo.value >= 130 & gemo.value <= 160) {
+    }
+    if (gemo.value >= 130 && gemo.value <= 160) {
         norm1.style.display = 'block';
         notNormal1.style.display = 'none';
     } else if (gemo.value < 130 || gemo.value > 160) {
         norm1.style.display = 'none';
         notNormal1.style.display = 'block';
     }
-    if (erythro.value >= 4.4 & erythro.value <= 5.0) {
+    if (erythro.value >= 4.4 && erythro.value <= 5.0) {
         norm2.style.display = 'block';
         notNormal2.style.display = 'none';
     } else if (erythro.value < 4.4 || erythro.value > 5.0) {
         norm2.style.display = 'none';
         notNormal2.style.display = 'block';
     }
-    if (mcv.value >= 80 & mcv.value <= 101) {
+    if (mcv.value >= 80 && mcv.value <= 101) {
         norm3.style.display = 'block';
         notNormal3.style.display = 'none';
     } else if (mcv.value < 80 || mcv.value > 101) {
         norm3.style.display = 'none';
         notNormal3.style.display = 'block';
     }
-    if (mch.value >= 27 & mch.value <= 35) {
+    if (mch.value >= 27 && mch.value <= 35) {
         norm4.style.display = 'block';
         notNormal4.style.display = 'none';
     } else if (mch.value < 27 || mch.value > 35) {
         norm4.style.display = 'none';
         notNormal4.style.display = 'block';
     }
-    if (mchc.value >= 32 & mchc.value <= 37) {
+    if (mchc.value >= 32 && mchc.value <= 37) {
         norm5.style.display = 'block';
         notNormal5.style.display = 'none';
     } else if (mchc.value < 32 || mchc.value > 37){
         norm5.style.display = 'none';
         notNormal5.style.display = 'block';
     }
-    if (hct.value >= 37 & hct.value <= 50) {
+    if (hct.value >= 37 && hct.value <= 50) {
         norm6.style.display = 'block';
         notNormal6.style.display = 'none';
     } else if (hct.value < 37 || hct.value > 50) {
         norm6.style.display = 'none';
         notNormal6.style.display = 'block';
     }
-    if (plt.value >= 150 & plt.value <= 400) {
+    if (plt.value >= 150 && plt.value <= 400) {
         norm7.style.display = 'block';
         notNormal7.style.display = 'none';
     } else if (plt.value < 150 || plt.value > 400){
@@ -215,5 +222,3 @@ function calculate () {
         notNormal7.style.display = 'block';
     }
 };
-
-
