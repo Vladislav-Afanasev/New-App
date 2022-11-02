@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,regular,italic,500,500italic" rel="stylesheet"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" title="theme" href="#">
+    <title>ProbirkaBY</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="" class="header__link-logo">ProbirkaBY</a>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__theme">
+                        <img class="change__theme" data-theme="light" src="./img/light_mode_FILL0_wght300_GRAD0_opsz40.svg" alt="sun-img">
+                        <img class="change__theme" data-theme="dark" src="./img/dark_mode_FILL0_wght300_GRAD0_opsz40.svg" alt="moon-img">
+                    </div>
+                    <ul class="header__list" id="menu">
+                        <li class="header__item">
+                            <a href="#decodingScroll" class="header__link">Расшифровка</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#chooseScroll" class="header__link">Каталог</a>
+                        </li>
+                        <li class="header__item">
+                            <button class="header__btn" id="openPopup">
+                                <a href="" class="header__link-btn">Вход/Регистрация</a>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="header__burger" id="burger">
+                        <span class="br1"></span>
+                        <span class="br2"></span>
+                        <span class="br3"></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="popup" id="popup"></div>
+        </header>
+        <div class="popup"></div>
+        <main class="main">
+            <section class="search">
+                <div class="search__container">
+                    <h1 class="search__title"><span>ProbirkaBY - первый белорусский интернет-ресурс, который поможет вам узнать результаты медицинских анализов не выходя из дома.</span></h1>
+                    <form class="search__form" action="" method="post" id="chooseScroll">
+                        <input class="search__input" type="search" name="search" placeholder="Поиск анализов...">
+                    </form>
+                </div>
+            </section>
+            <section class="choose">
+                <div class="choose__container">
+                    <h1 class="choose__title">Готовые алгоритмы расшифровки медицинских анализов</h1>
+                    <div class="choose__slider">
+                        <div class="choose__items">
+                            <div class="choose__item">
+                                <span class="slider__title">Общий анализ крови CBC/Diff с лейкоцитарной формулой без СОЭ</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">Клинический общий анализ крови CBC/Diff с СОЭ</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">Общий белок (TP, Total Blood Protein)</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">25-ОН Витамин Д (Vitamin D, 25-hydroxy, 25-hydroxyca</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">Креатинин (Creatinine, creat, serum creat.</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">Билирубин общий (Total bilirubin, TBIL.</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                            <div class="choose__item">
+                                <span class="slider__title">Холестерин общий (Total Blood Cholesterol.</span>
+                                <span class="slider__stock-1">Алгоритм готов к расшифроке</span>
+                                <span class="slider__stock-2">Результат расшифроки проводился в течение одного рабочего дня</span>
+                                <a href="" class="slider__btn"><button>Подробнее...</button></a>
+                            </div>
+                        </div>
+                        <div class="choose__btns" id="decodingScroll">
+                            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                            <button class="choose__control-prev" data-slide="prev">Назад</button>
+                            <button class="choose__control-next" data-slide="next">Следующий</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="decoding">
+                <div class="decoding__container">
+                    <span class="decoding__discription">Расшифровка общего анализа крови</span>
+                    <div class="decoding__main-title">
+                        <span class="decoding__title-counter">Расшифровано анализов:</span>
+                        <span class="decoding__counter">453</span>
+                    </div>
+                        <form action="" class="decoding__form">
+                            <div class="decoding__form-wrapper">
+                                <label for="">Скорость оседания эритроцитов (СОЭ)</label>
+                                <input type="number" class="input soe" placeholder="Введите значение"><span class="normal">Показатель в норме</span><span class="notNormal">Показатель не в норме</span><span>мм/час</span><span class="warning">Введите значения!</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Гемоглобин</label>
+                                <input type="number" class="input gemo" placeholder="Введите значение"><span class="normal1">Показатель в норме</span><span class="notNormal1">Показатель не в норме</span><span>г/л</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Эритроциты (RBC)</label>
+                                <input type="number" class="input erythro" placeholder="Введите значение"><span class="normal2">Показатель в норме</span><span class="notNormal2">Показатель не в норме</span><span>10<sup>12</sup>/л</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Средний объём эритроцитов (MCV)</label>
+                                <input type="number" class="input mcv" placeholder="Введите значение"><span class="normal3">Показатель в норме</span><span class="notNormal3">Показатель не в норме</span><span>фл</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Среднее содержание гемоглобина в эритроците MCH</label>
+                                <input type="number" class="input mch" placeholder="Введите значение"><span class="normal4">Показатель в норме</span><span class="notNormal4">Показатель не в норме</span><span>пг</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Средняя концентрация гемоглобина в эритроците MCHC</label>
+                                <input type="number" class="input mchc" placeholder="Введите значение"><span class="normal5">Показатель в норме</span><span class="notNormal5">Показатель не в норме</span><span>г/л</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Гематокрит (HCT)</label>
+                                <input type="number" class="input hct" placeholder="Введите значение"><span class="normal6">Показатель в норме</span><span class="notNormal6">Показатель не в норме</span><span>%</span>
+                            </div>
+                            <div class="decoding__form-wrapper">
+                                <label for="">Тромбоциты (PLT)</label>
+                                <input type="number" class="input plt" placeholder="Введите значение"><span class="normal7">Показатель в норме</span><span class="notNormal7">Показатель не в норме</span><span>10<sup>9</sup>/л</span>
+                            </div>
+                            <div class="decoding__form-agree">
+                                <input type="checkbox" name="" id="" required class="input check"><span>Я согласен с тем, что администрация сайта не несет ответственности за возможные отрицательные последствия, возникшие в результате самостоятельной интерпретации своих анализов и назначения лечения или бездействия. Я понимаю, что результаты расшифровки анализов носят только информационный характер, не являются диагнозом и не заменяют очной консультации врача.</span> 
+                            </div>
+                            <button class="decoding__submit">Расшифровать</button>
+                    </form>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__wrapper">
+                        <div class="about__text">
+                            <h2 class="about__title">Проверка медицинских анализов</h2>
+                            <p class="about__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates commodi eligendi omnis, natus dolor aliquam doloribus inventore delectus sapiente ut nisi totam veniam distinctio deserunt veritatis pariatur suscipit quod praesentium in perspiciatis maxime harum facilis, aspernatur et.</p><p class="about__subtitle">Aut explicabo tempore quae pariatur sint illum quam possimus repellendus fugiat totam placeat a quos minus molestiae delectus sit eveniet, beatae dicta, ea soluta iure illo qui voluptate. Architecto ipsum asperiores at. Placeat mollitia, quibusdam, magnam unde eveniet aperiam harum possimus molestiae voluptatibus illo earum soluta omnis odit iusto adipisci. Nisi at labore quibusdam, enim pariatur quam iste doloremque, illo magni, repudiandae aliquam!</p> 
+                        </div>
+                        <div class="about__counter">
+                            <div class="about__row-1">
+                                <div class="about__row-wrapper-1">
+                                    <div class="about__number">2012</div>
+                                    <div class="about__number-subtitle">Год основания</div>
+                                </div>
+                                <div class="about__row-wrapper-2">
+                                    <div class="about__number">510</div>
+                                    <div class="about__number-subtitle">Вариаций анализирования</div>
+                                </div>
+                            </div>
+                            <div class="about__row-2">
+                                <div class="about__number">563 894</div>
+                                <div class="about__number-subtitle">Количество проанализированных результатов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__benefits">
+                        <h1 class="about__benefits-title">Почему стоит предоставлять ваши анализы на проверку именно нам, а не другим сторонним онлайн-ресурсам?</h1>
+                        <div class="about__benefits-wrapper">
+                            <div class="about__benefits-row-1">
+                                <div class="about__benefits-text">По сравнению с многочисленными онлайн-ресурсами у нас они стоят вдвое дешевле! Кроме того:</div>
+                                <ul class="about__benefits-list">
+                                    <li class="about__benefits-ilem">&mdash; Мы гарантируем высокое качество услуг, поскольку исследования проводятся в хорошо оснащенных современной медтехникой лабораториях.</li>
+                                    <li class="about__benefits-ilem">&mdash; Сдавать медицинские анализы можно вне очереди в любом удобном для вас медицинском центре, являющимся партнером ProbirkaBY.</li>
+                                    <li class="about__benefits-ilem">&mdash; Вам не придется терять время на оформление заказа и его оплату в регистратуре, в режиме онлайн это займет не более пары минут.</li>
+                                    <li class="about__benefits-ilem">&mdash; За результатом мед анализов вам не придется идти в лабораторию. Как только он будет готов, его тут же отправят на вашу электронную почту</li>
+                                    <li class="about__benefits-ilem">&mdash; Сумма в чеке вас приятно удивит – на большинство анализов действует постоянная 50-процентная скидка.</li>
+                                </ul>
+                            </div>
+                            <div class="about__benefits-row-2">
+                                <div class="about__benefits-text">6 простых шагов сдать медицинские анализы в ProbirkaBY со скидкой до 50%:</div>
+                                <ul class="about__benefits-list">
+                                    <li class="about__benefits-ilem">&mdash; На сайте онлайн-лаборатории ProbirkaBY добавить необходимые исследования в заказ.</li>
+                                    <li class="about__benefits-ilem">&mdash; Определиться с медцентром, в котором вам удобно сдать платные анализы, с датой и временем его посещения.</li>
+                                    <li class="about__benefits-ilem">&mdash; Заполнить предлагаемую регистрационную форму.</li>
+                                    <li class="about__benefits-ilem">&mdash; Оплатить оформленный заказ оптимальным для вас способом.</li>
+                                    <li class="about__benefits-ilem">&mdash; Дождаться получения результатов на электронную почту.</li>
+                                    <li class="about__benefits-ilem">&mdash; Дождаться получения результатов на электронную почту.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__container">
+                    <h1 class="reviews__title">Отзывы наших клиентов</h1>
+                    <div class="reviews__slider">
+                        <div class="reviews__items">
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Анастасия В.</span>
+                                    <p class="reviews__date">Дата обращения 10.12.20</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Анастасия В.</span>
+                                    <p class="reviews__date">Дата обращения 10.12.20</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Виктор Г.</span>
+                                    <p class="reviews__date">Дата обращения 04.11.19</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Надежда В.</span>
+                                    <p class="reviews__date">Дата обращения 02.04.18</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Надежда В.</span>
+                                    <p class="reviews__date">Дата обращения 02.04.18</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__person">
+                                    <span class="reviews__name">Анастасия Ф.</span>
+                                    <p class="reviews__date">Дата обращения 22.01.20</p>
+                                </div>
+                                <div class="reviews__text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ea perspiciatis at voluptas inventore minus est. Doloremque incidunt odit enim debitis aperiam exercitationem tenetur dolor blanditiis impedit explicabo amet atque consectetur consequuntur, cupiditate quo nihil ad, aliquam rerum magni dolores nam mollitia expedita error pariatur! Impedit iste autem magni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__btns">
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="reviews__control-prev" data-slide="prev">Назад</button>
+                        <button class="reviews__control-next" data-slide="next">Следующий</button>
+                    </div>
+                </div>
+            </section>
+            <section class="brands">
+                <div class="brands__container">
+                    <div class="brands__title">
+                        СМИ о нас
+                    </div>
+                    <ul class="brands__list">
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/beautyhack.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/blueprint.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/cosmopolitan.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/forbes.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/habr.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/in-style.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/vc-ru.png" alt="brand" class="brands__img"></a>
+                        </li>
+                        <li class="brands__item">
+                            <a href="" class="brands__link"><img src="./img/towave.png" alt="brand" class="brands__img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__title">
+                    <p>© 2012–2022 ООО «Ваша лаборатория»</p>
+                </div>
+                <div class="footer__about">
+                    <ul class="footer__about-list-1">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Наша лицензия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Политика обработки персональных данных</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Правила проведения</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Положение об электронных подарочных сертификатах</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__about-list-2">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">О нас</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Вопросы и ответы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Библиотека</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">ProbirkaBY в СМИ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__about-list-3">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Каталог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Как оплатить</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Как расшифровать</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Подари бесплатную расшифровку</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Анализы и цены</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__keepInTouch">
+                    <p class="footer__text">Мы в социальных сетях:</p>
+                    <div class="footer__img">
+                        <a href=""><img src="./img/icons8-instagram-48.png" alt="icon"></a>
+                        <a href=""><img src="./img/icons8-vk-в-круге-48.png" alt="icon"></a>
+                        <a href=""><img src="./img/icons8-yandex-zen-48.png" alt="icon"></a>
+                        <a href=""><img src="./img/icons8-youtube-play-48.png" alt="icon"></a>
+                        <a href=""><img src="./img/icons8-телеграмма-app-48.png" alt="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="reg__popup" id="mainPopup">
+            <div class="reg__body">
+                <div class="reg__container">
+                    <span class="reg__close" id="closePopup">&#128473;</span>
+                    <div class="reg__title-1">Добро пожаловать! Зарегистрируйтесь</div>
+                    <form autocomplete="off" class="reg__form-f">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Пароль" required>
+                        <button class="button">Регистрация</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
